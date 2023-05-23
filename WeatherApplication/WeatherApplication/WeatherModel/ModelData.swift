@@ -12,7 +12,7 @@ class ModelData: ObservableObject {
     
 
     func loadData(lat: Double, lon: Double) async throws -> Forecast {
-        let url = URL(string: "https://api.openweathermap.org/data/3.0/onecall?lat=\(lat)&lon=\(lon)&units=metric&appid=3864a49da795d3aa174034e60ca4e6a1")
+        let url = URL(string: "")
         let session = URLSession(configuration: .default)
         
         let (data, _) = try await session.data(from: url!)
@@ -65,7 +65,7 @@ class ModelData: ObservableObject {
         
         print("\(lon)")
         print("\(lat)")
-        let url = URL(string:"https://api.openweathermap.org/data/2.5/air_pollution?lat=\(lat)&lon=\(lon)&appid=3864a49da795d3aa174034e60ca4e6a1")
+        let url = URL(string:"")
         let session = URLSession(configuration: .default)
         
         let (data, _) = try await session.data(from: url!)
