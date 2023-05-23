@@ -2,7 +2,7 @@
 //  ViewController.swift
 //  AreaCalculator
 //
-//  Created by Pubudu Mihiranga on 2023-01-27.
+//  Created by Ravija Gunawardana on 2023-01-27.
 //
 
 import UIKit
